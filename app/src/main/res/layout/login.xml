@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login"
-    android:background="@color/colorPrimaryDark">
+    android:background="#0169BE">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -14,18 +14,36 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="18"
+                app:srcCompat="@drawable/negativoitson" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
             android:gravity="center_horizontal">
 
             <EditText
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="18"
                 android:height="40dp"
                 android:background="@android:color/white"
+                android:ems="18"
                 android:hint=" ID de Usuario"
-                android:textSize="15dp"/>
+                android:inputType="number"
+                android:minHeight="40dp"
+                android:textSize="15dp" />
         </TableRow>
 
         <TableRow
@@ -38,11 +56,44 @@
                 android:id="@+id/editText4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="18"
                 android:height="40dp"
                 android:background="@android:color/white"
+                android:ems="18"
                 android:hint=" Contraseña"
-                android:textSize="15dp"/>
+                android:inputType="textPassword"
+                android:minHeight="40dp"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INICIAR SESIÓN"
+                android:textColor="@android:color/white"
+                android:background="#173761"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recuperar Contraseña"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>
