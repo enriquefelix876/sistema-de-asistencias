@@ -76,9 +76,10 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#173761"
+                android:onClick="alumno"
                 android:text="INICIAR SESIÓN"
-                android:textColor="@android:color/white"
-                android:background="#173761"/>
+                android:textColor="@android:color/white" />
         </TableRow>
 
         <TableRow
@@ -91,6 +92,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="maestro"
                 android:text="Recuperar Contraseña"
                 android:gravity="center_horizontal"
                 android:textColor="@android:color/white"/>

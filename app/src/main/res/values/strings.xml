@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sistema de Asistencias</string>
+    <string name="btn_cam">Cámara</string>
 </resources>
